@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Opdracht C</title>
+</head>
+
+<body>
+
+    <div class="heading">
+        <h1>Wat is het verschil in studieachterstand tussen verschillende vooropleidingen?</h1>
+        <div class="information">
+            <button class="button-information" onMouseOver="a.show('div-info')" onMouseOut="a.hide('div-info')">?</button>
+            <div name="a" id="div-info">
+                <p>
+                    Deze datavisualisatie laat het verschil in studieachterstand zien. Elke cirkel staat voor één student met studieachterstand. De kleur geeft aan welke vooropleiding de student heeft gevolgd.<br><br>
+                    De studieachterstand varieert van 1 tot 60 studiepunten. <br><br>
+                    Bij <i>hover</i> krijgt de rand van de cirkel een nieuwe waarde. De rand staat dan voor de tot nu toe te behalen studiepunten (120). Je ziet dan de voortgang van de student.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><button class="button-all" onclick="window.location.href = 'index.html';">Alles</button></li>
+            <li><button class="button-mbo button-blue">MBO</button></li>
+            <li><button class="button-havo button-yellow">HAVO</button></li>
+            <li><button class="button-vwo button-red">VWO</button></li>
+            <li><button class="button-anders button-green">Anders</button></li>
+        </ul>
+
+        <div class="legend">
+            <div>
+                <div class="cirkel-60points"></div>
+                <p>= 60 studiepunten</p>
+            </div>
+
+            <div>
+                <div class="cirkel-120points"></div>
+                <p>= 120 studiepunten (hover)</p>
+            </div>
+        </div>
+    </nav>
+
+    <div class="infobox">
+        <div name="a" id="div20">
+            <p>
+                Gender: Vrouw<br>
+                Geboortedatum: 05-07-1994<br>
+                Behaalde studiepunten: 119
+            </p>
+        </div>
+
+        <div name="a" id="div21">
+            <p>
+                Gender: Man<br>
+                Geboortedatum: 29-10-1994<br>
+                Behaalde studiepunten: 119
+            </p>
+        </div>
+
+        <div name="a" id="div22">
+            <p>
+                Gender: Man<br>
+                Geboortedatum: 01-03-1995<br>
+                Behaalde studiepunten: 119
+            </p>
+        </div>
+
+        <div name="a" id="div23">
+            <p>
+                Gender: Vrouw<br>
+                Geboortedatum: 07-04-1995<br>
+                Behaalde studiepunten: 119
+            </p>
+        </div>
+
+        <div name="a" id="div24">
+            <p>
+                Gender: Vrouw<br>
+                Geboortedatum: 27-08-1995<br>
+                Behaalde studiepunten: 119
+            </p>
+        </div>
+
+        <div name="a" id="div25">
+            <p>
+                Gender: Man<br>
+                Geboortedatum: 20-11-1995<br>
+                Behaalde studiepunten: 119
+            </p>
+        </div>
+
+        <div name="a" id="div26">
+            <p>
+                Gender: Man<br>
+                Geboortedatum: 23-10-1996<br>
+                Behaalde studiepunten: 119
+            </p>
+        </div>
+
+        <div name="a" id="div27">
+            <p>
+                Gender: Man<br>
+                Geboortedatum: 07-05-2000<br>
+                Behaalde studiepunten: 119
+            </p>
+        </div>
+
+        <div name="a" id="div28">
+            <p>
+                Gender: Man<br>
+                Geboortedatum: 25-03-2019<br>
+                Behaalde studiepunten: 119
+            </p>
+        </div>
+
+        <div name="a" id="div29">
+            <p>
+                Gender: Man<br>
+                Geboortedatum: 29-08-1994<br>
+                Behaalde studiepunten: 118
+            </p>
+        </div>
+
+        <div name="a" id="div30">
+            <p>
+                Gender: Vrouw<br>
+                Geboortedatum: 17-08-1995<br>
+                Behaalde studiepunten: 118
+            </p>
+        </div>
+
+        <div name="a" id="div77">
+            <p>
+                Gender: Vrouw<br>
+                Geboortedatum: 10-02-1997<br>
+                Behaalde studiepunten: 118
+            </p>
+        </div>
+
+        <div name="a" id="div31">
+            <p>
+                Gender: Vrouw<br>
+                Geboortedatum: 11-12-1993<br>
+                Behaalde studiepunten: 117
+            </p>
+        </div>
+
+        <div name="a" id="div33">
+            <p>
+                Gender: Vrouw<br>
+                Geboortedatum: 20-03-1999<br>
+                Behaalde studiepunten: 117
+            </p>
+        </div>
+
+        <div name="a" id="div32">
+            <p>
+                Gender: Man<br>
+                Geboortedatum: 27-01-1997<br>
+                Behaalde studiepunten: 117
+            </p>
+        </div>
+
+        <div name="a" id="div34">
+            <p>
+                Gender: Man<br>
+                Geboortedatum: 01-08-2019<br>
+                Behaalde studiepunten: 117
+            </p>
+        </div>
+
+        <div name="a" id="div35">
+            <p>
+                Gender: Man<br>
+                Geboortedatum: 03-09-1992<br>
+                Behaalde studiepunten: 116
+            </p>
+        </div>
+
+        <div name="a" id="div36">
+            <p>
+                Gender: Vrouw<br>
+                Geboortedatum: 08-10-1999<br>
+                Behaalde studiepunten: 116
+            </p>
+        </div>
+
+        <div name="a" id="div37">
+            <p>
+                Gender: Man<br>
+                Geboortedatum: 01-06-1997<br>
+                Behaalde studiepunten: 115
+            </p>
+        </div>
+
+        <div name="a" id="div38">
+            <p>
+                Gender: Vrouw<br>
+                Geboortedatum: 01-04-2019<br>
+                Behaalde studiepunten: 115
+            </p>
+        </div>
+
+        <div name="a" id="div39">
+            <p>
+                Gender: Man<br>
+                Geboortedatum: 08-01-1996<br>
+                Behaalde studiepunten: 114
+            </p>
+        </div>
+
+        <div name="a" id="div40">
+            <p>
+                Gender: Vrouw<br>
+                Geboortedatum: 11-04-1994<br>
+                Behaalde studiepunten: 112
+            </p>
+        </div>
+
+        <div name="a" id="div41">
+            <p>
+                Gender: Vrouw<br>
+                Geboortedatum: 27-07-1997<br>
+                Behaalde studiepunten: 112
+            </p>
+        </div>
+
+        <div name="a" id="div42">
+            <p>
+                Gender: Man<br>
+                Geboortedatum: 06-04-1996<br>
+                Behaalde studiepunten: 111
+            </p>
+        </div>
+
+        <div name="a" id="div43">
+            <p>
+                Gender: Man<br>
+                Geboortedatum: 30-07-1997<br>
+                Behaalde studiepunten: 111
+            </p>
+        </div>
+
+        <div name="a" id="div44">
+            <p>
+                Gender: Vrouw<br>
+                Geboortedatum: 23-11-1995<br>
+                Behaalde studiepunten: 110
+            </p>
+        </div>
+
+        <div name="a" id="div45">
+            <p>
+                Gender: Man<br>
+                Geboortedatum: 03-11-1997<br>
+                Behaalde studiepunten: 110
+            </p>
+        </div>
+
+        <div name="a" id="div46">
+            <p>
+                Gender: Vrouw<br>
+                Geboortedatum: 11-07-1998<br>
+                Behaalde studiepunten: 110
+            </p>
+        </div>
+
+        <div name="a" id="div47">
+            <p>
+                Gender: Vrouw<br>
+                Geboortedatum: 25-11-1998<br>
+                Behaalde studiepunten: 110
+            </p>
+        </div>
+
+        <div name="a" id="div48">
+            <p>
+                Gender: Vrouw<br>
+                Geboortedatum: 02-10-1995<br>
+                Behaalde studiepunten: 107
+            </p>
+        </div>
+
+        <div name="a" id="div49">
+            <p>
+                Gender: Man<br>
+                Geboortedatum: 03-07-1998<br>
+                Behaalde studiepunten: 106
+            </p>
+        </div>
+
+        <div name="a" id="div50">
+            <p>
+                Gender: Man<br>
+                Geboortedatum: 06-04-2000<br>
+                Behaalde studiepunten: 106
+            </p>
+        </div>
+        <div name="a" id="div51">
+            <p>
+                Gender: Man<br>
+                Geboortedatum: 09-01-1993<br>
+                Behaalde studiepunten: 105
+            </p>
+        </div>
+
+        <div name="a" id="div52">
+            <p>
+                Gender: Man<br>
+                Geboortedatum: 27-03-1998<br>
+                Behaalde studiepunten: 104
+            </p>
+        </div>
+
+        <div name="a" id="div53">
+            <p>
+                Gender: Vrouw<br>
+                Geboortedatum: 11-04-1998<br>
+                Behaalde studiepunten: 104
+            </p>
+        </div>
+
+        <div name="a" id="div54">
+            <p>
+                Gender: Man<br>
+                Geboortedatum: 25-11-1996<br>
+                Behaalde studiepunten: 103
+            </p>
+        </div>
+
+        <div name="a" id="div55">
+            <p>
+                Gender: Man<br>
+                Geboortedatum: 02-01-1997<br>
+                Behaalde studiepunten: 103
+            </p>
+        </div>
+
+        <div name="a" id="div56">
+            <p>
+                Gender: Vrouw<br>
+                Geboortedatum: 28-11-1997<br>
+                Behaalde studiepunten: 103
+            </p>
+        </div>
+
+        <div name="a" id="div57">
+            <p>
+                Gender: Man<br>
+                Geboortedatum: 29-04-1997<br>
+                Behaalde studiepunten: 102
+            </p>
+        </div>
+
+        <div name="a" id="div58">
+            <p>
+                Gender: Vrouw<br>
+                Geboortedatum: 11-12-1997<br>
+                Behaalde studiepunten: 102
+            </p>
+        </div>
+
+        <div name="a" id="div59">
+            <p>
+                Gender: Vrouw<br>
+                Geboortedatum: 02-12-1998<br>
+                Behaalde studiepunten: 102
+            </p>
+        </div>
+
+        <div name="a" id="div60">
+            <p>
+                Gender: Man<br>
+                Geboortedatum: 18-08-2000<br>
+                Behaalde studiepunten: 102
+            </p>
+        </div>
+
+        <div name="a" id="div61">
+            <p>
+                Gender: Vrouw<br>
+                Geboortedatum: 09-05-1996<br>
+                Behaalde studiepunten: 98
+            </p>
+        </div>
+
+        <div name="a" id="div62">
+            <p>
+                Gender: Man<br>
+                Geboortedatum: 08-11-2019<br>
+                Behaalde studiepunten: 98
+            </p>
+        </div>
+
+        <div name="a" id="div63">
+            <p>
+                Gender: Man<br>
+                Geboortedatum: 09-12-2019<br>
+                Behaalde studiepunten: 98
+            </p>
+        </div>
+
+        <div name="a" id="div64">
+            <p>
+                Gender: Man<br>
+                Geboortedatum: 17-07-1999<br>
+                Behaalde studiepunten: 97
+            </p>
+        </div>
+
+        <div name="a" id="div65">
+            <p>
+                Gender: Man<br>
+                Geboortedatum: 13-04-1996<br>
+                Behaalde studiepunten: 96
+            </p>
+        </div>
+
+        <div name="a" id="div66">
+            <p>
+                Gender: Man<br>
+                Geboortedatum: 15-10-1998<br>
+                Behaalde studiepunten: 91
+            </p>
+        </div>
+
+        <div name="a" id="div67">
+            <p>
+                Gender: Vrouw<br>
+                Geboortedatum: 23-05-1997<br>
+                Behaalde studiepunten: 90
+            </p>
+        </div>
+
+        <div name="a" id="div68">
+            <p>
+                Gender: Vrouw<br>
+                Geboortedatum: 12-09-1997<br>
+                Behaalde studiepunten: 84
+            </p>
+        </div>
+
+        <div name="a" id="div69">
+            <p>
+                Gender: Vrouw<br>
+                Geboortedatum: 29-08-1993<br>
+                Behaalde studiepunten: 83
+            </p>
+        </div>
+
+        <div name="a" id="div70">
+            <p>
+                Gender: Man<br>
+                Geboortedatum: 06-07-1997<br>
+                Behaalde studiepunten: 72
+            </p>
+        </div>
+
+        <div name="a" id="div71">
+            <p>
+                Gender: Vrouw<br>
+                Geboortedatum: 05-10-1994<br>
+                Behaalde studiepunten: 60
+            </p>
+        </div>
+
+        <div name="a" id="div72">
+            <p>
+                Gender: Man<br>
+                Geboortedatum: 24-03-1997<br>
+                Behaalde studiepunten: 60
+            </p>
+        </div>
+    </div>
+
+
+    <div class="container">
+
+        <div class="cube-container mbo-border mbo">
+            <div class="outer outer-mbo outer-size-119" onMouseOver="a.show('div20')" onMouseOut="a.hide('div20')">
+                <div class="inner-119 mbo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container mbo-border mbo" onMouseOver="a.show('div21')" onMouseOut="a.hide('div21')">
+            <div class="outer outer-mbo outer-size-119">
+                <div class="inner-119 mbo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container anders-border anders" onMouseOver="a.show('div22')" onMouseOut="a.hide('div22')">
+            <div class="outer outer-anders outer-size-119">
+                <div class="inner-119 anders-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container havo-border havo" onMouseOver="a.show('div23')" onMouseOut="a.hide('div23')">
+            <div class="outer outer-havo outer-size-119">
+                <div class="inner-119 havo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container mbo-border mbo" onMouseOver="a.show('div24')" onMouseOut="a.hide('div24')">
+            <div class="outer outer-mbo outer-size-119">
+                <div class="inner-119 mbo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container mbo-border mbo" onMouseOver="a.show('div25')" onMouseOut="a.hide('div25')">
+            <div class="outer outer-mbo outer-size-119">
+                <div class="inner-119 mbo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container mbo-border mbo" onMouseOver="a.show('div26')" onMouseOut="a.hide('div26')">
+            <div class="outer outer-mbo outer-size-119">
+                <div class="inner-119 mbo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container havo-border havo" onMouseOver="a.show('div27')" onMouseOut="a.hide('div27')">
+            <div class="outer outer-havo outer-size-119">
+                <div class="inner-119 havo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container havo-border havo" onMouseOver="a.show('div28')" onMouseOut="a.hide('div28')">
+            <div class="outer outer-havo outer-size-119">
+                <div class="inner-119 havo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container vwo-border vwo" onMouseOver="a.show('div29')" onMouseOut="a.hide('div29')">
+            <div class="outer outer-vwo outer-size-118">
+                <div class="inner-118 vwo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container mbo-border mbo" onMouseOver="a.show('div30')" onMouseOut="a.hide('div30')">
+            <div class="outer outer-mbo outer-size-118">
+                <div class="inner-118 mbo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container mbo-border mbo" onMouseOver="a.show('div77')" onMouseOut="a.hide('div77')">
+            <div class="outer outer-mbo outer-size-118">
+                <div class="inner-118 mbo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container mbo-border mbo" onMouseOver="a.show('div31')" onMouseOut="a.hide('div31')">
+            <div class="outer outer-mbo outer-size-117">
+                <div class="inner-117 mbo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container mbo-border mbo">
+            <div class="outer outer-mbo outer-size-117" onMouseOver="a.show('div32')" onMouseOut="a.hide('div32')">
+                <div class="inner-117 mbo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container mbo-border mbo" onMouseOver="a.show('div33')" onMouseOut="a.hide('div33')">
+            <div class="outer outer-mbo outer-size-117">
+                <div class="inner-117 mbo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container havo-border havo" onMouseOver="a.show('div34')" onMouseOut="a.hide('div34')">
+            <div class="outer outer-havo outer-size-117">
+                <div class="inner-117 havo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container vwo-border vwo" onMouseOver="a.show('div35')" onMouseOut="a.hide('div35')">
+            <div class="outer outer-vwo outer-size-116">
+                <div class="inner-116 vwo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container havo-border havo" onMouseOver="a.show('div36')" onMouseOut="a.hide('div36')">
+            <div class="outer outer-havo outer-size-116">
+                <div class="inner-116 havo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container mbo-border mbo" onMouseOver="a.show('div37')" onMouseOut="a.hide('div37')">
+            <div class="outer outer-mbo outer-size-115">
+                <div class="inner-115 mbo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container havo-border havo" onMouseOver="a.show('div38')" onMouseOut="a.hide('div38')">
+            <div class="outer outer-havo  outer-size-115">
+                <div class="inner-115 havo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container havo-border havo" onMouseOver="a.show('div39')" onMouseOut="a.hide('div39')">
+            <div class="outer outer-havo  outer-size-114">
+                <div class="inner-114 havo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container vwo-border vwo" onMouseOver="a.show('div40')" onMouseOut="a.hide('div40')">
+            <div class="outer outer-vwo outer-size-112">
+                <div class="inner-112 vwo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container mbo-border mbo" onMouseOver="a.show('div41')" onMouseOut="a.hide('div41')">
+            <div class="outer outer-mbo outer-size-112">
+                <div class="inner-112 mbo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container mbo-border mbo" onMouseOver="a.show('div42')" onMouseOut="a.hide('div42')">
+            <div class="outer outer-mbo outer-size-111">
+                <div class="inner-111 mbo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container mbo-border mbo" onMouseOver="a.show('div43')" onMouseOut="a.hide('div43')">
+            <div class="outer outer-mbo outer-size-111">
+                <div class="inner-111 mbo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container mbo-border mbo" onMouseOver="a.show('div44')" onMouseOut="a.hide('div44')">
+            <div class="outer outer-mbo outer-size-110">
+                <div class="inner-110 mbo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container havo-border havo" onMouseOver="a.show('div45')" onMouseOut="a.hide('div45')">
+            <div class="outer outer-havo outer-size-110">
+                <div class="inner-110 havo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container mbo-border mbo" onMouseOver="a.show('div46')" onMouseOut="a.hide('div46')">
+            <div class="outer outer-mbo outer-size-110">
+                <div class="inner-110 mbo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container havo-border havo" onMouseOver="a.show('div47')" onMouseOut="a.hide('div47')">
+            <div class="outer outer-havo outer-size-110">
+                <div class="inner-110 havo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container mbo-border mbo" onMouseOver="a.show('div48')" onMouseOut="a.hide('div48')">
+            <div class="outer outer-mbo outer-size-107">
+                <div class="inner-107 mbo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container havo-border havo" onMouseOver="a.show('div49')" onMouseOut="a.hide('div49')">
+            <div class="outer outer-havo outer-size-106">
+                <div class="inner-106 havo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container havo-border havo" onMouseOver="a.show('div50')" onMouseOut="a.hide('div50')">
+            <div class="outer outer-havo outer-size-106">
+                <div class="inner-106 havo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container vwo-border vwo" onMouseOver="a.show('div51')" onMouseOut="a.hide('div51')">
+            <div class="outer outer-vwo outer-size-105">
+                <div class="inner-105 vwo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container havo-border havo" onMouseOver="a.show('div52')" onMouseOut="a.hide('div52')">
+            <div class="outer outer-havo outer-size-104">
+                <div class="inner-104 havo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container havo-border havo" onMouseOver="a.show('div53')" onMouseOut="a.hide('div53')">
+            <div class="outer outer-havo outer-size-104">
+                <div class="inner-104 havo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container mbo-border mbo" onMouseOver="a.show('div54')" onMouseOut="a.hide('div54')">
+            <div class="outer outer-mbo outer-size-103">
+                <div class="inner-103 mbo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container havo-border havo" onMouseOver="a.show('div55')" onMouseOut="a.hide('div55')">
+            <div class="outer outer-havo outer-size-103">
+                <div class="inner-103 havo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container vwo-border vwo" onMouseOver="a.show('div56')" onMouseOut="a.hide('div56')">
+            <div class="outer outer-vwo outer-size-103">
+                <div class="inner-103 vwo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container havo-border havo" onMouseOver="a.show('div57')" onMouseOut="a.hide('div57')">
+            <div class="outer outer-havo outer-size-102">
+                <div class="inner-102 havo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container mbo-border mbo" onMouseOver="a.show('div58')" onMouseOut="a.hide('div58')">
+            <div class="outer outer-mbo outer-size-102">
+                <div class="inner-102 mbo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container havo-border havo" onMouseOver="a.show('div59')" onMouseOut="a.hide('div59')">
+            <div class="outer outer-havo outer-size-102">
+                <div class="inner-102 havo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container havo-border havo" onMouseOver="a.show('div60')" onMouseOut="a.hide('div60')">
+            <div class="outer outer-havo outer-size-102">
+                <div class="inner-102 havo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container havo-border havo" onMouseOver="a.show('div61')" onMouseOut="a.hide('div61')">
+            <div class="outer outer-havo outer-size-98">
+                <div class="inner-98 havo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container havo-border havo" onMouseOver="a.show('div62')" onMouseOut="a.hide('div62')">
+            <div class="outer outer-havo outer-size-98">
+                <div class="inner-98 havo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container havo-border havo" onMouseOver="a.show('div63')" onMouseOut="a.hide('div63')">
+            <div class="outer outer-havo outer-size-98">
+                <div class="inner-98 havo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container havo-border havo" onMouseOver="a.show('div64')" onMouseOut="a.hide('div64')">
+            <div class="outer outer-havo outer-size-97">
+                <div class="inner-97 havo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container mbo-border mbo" onMouseOver="a.show('div65')" onMouseOut="a.hide('div65')">
+            <div class="outer outer-mbo outer-size-96">
+                <div class="inner-96 mbo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container havo-border havo" onMouseOver="a.show('div66')" onMouseOut="a.hide('div66')">
+            <div class="outer outer-havo outer-size-91">
+                <div class="inner-91 havo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container havo-border havo" onMouseOver="a.show('div67')" onMouseOut="a.hide('div67')">
+            <div class="outer outer-havo outer-size-90">
+                <div class="inner-90 havo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container havo-border havo" onMouseOver="a.show('div68')" onMouseOut="a.hide('div68')">
+            <div class="outer outer-havo outer-size-84">
+                <div class="inner-84 havo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container vwo-border vwo" onMouseOver="a.show('div69')" onMouseOut="a.hide('div69')">
+            <div class="outer outer-vwo outer-size-83">
+                <div class="inner-83 vwo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container mbo-border mbo" onMouseOver="a.show('div70')" onMouseOut="a.hide('div70')">
+            <div class="outer outer-mbo outer-size-72">
+                <div class="inner-72 mbo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container mbo-border mbo" onMouseOver="a.show('div71')" onMouseOut="a.hide('div71')">
+            <div class="outer outer-mbo outer-size-60">
+                <div class="inner-60 mbo-background">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cube-container mbo-border mbo" onMouseOver="a.show('div72')" onMouseOut="a.hide('div72')">
+            <div class="outer outer-mbo outer-size-60">
+                <div class="inner-60 mbo-background">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script/hover.js"></script>
+    <script src="script/filter.js"></script>
+</body></html>
